@@ -1,0 +1,116 @@
+name: EssentialsAdmin
+version: ${project.version}
+main: me.Onariep.EssentialsAdmin.Main
+api-version: 1.13
+prefix: EA
+load: STARTUP
+authors: [Onariep]
+description: a plugin that adds in essential commands
+website: https://megamadnetwork.enjin.com/
+commands:
+  on:
+    description: sets fly on
+    usage: /<command>
+    permission: EA.fly
+    permission-message: &4error: you do not have permission to use this command.
+
+  fly:
+    description: sets fly on
+    usage: /<command>
+    permission: EA.fly
+    permission-message: &4error: you do not have permission to use this command.
+
+  off:
+    description: sets fly off
+    usage: /<command>
+    permission: EA.fly
+    permission-message: &4error: you do not have permission to use this command.
+
+  unfly:
+    description: sets fly off
+    usage: /<command>
+    permission: EA.fly
+    permission-message: &4error: you do not have permission to use this command.
+
+  reset:
+    description: resets your player
+    usage: /<command>
+
+  health:
+    description: gives you 100 health
+    usage: /<command>
+    permission: EA.health
+    permission-message: &4error: you do not have permission to use this command.
+
+  god:
+    description: sets god mode on
+    usage: /<command>
+    permission: EA.god
+    permission-message: &4error: you do not have permission to use this command.
+
+  ungod:
+    description: sets god mode off
+    usage: /<command>
+    permission: EA.god
+    permission-message: &4error: you do not have permission to use this command.
+
+  essentialsadmin:
+    description: gives you a list of all the commands
+    usage: /<command>
+    permission: EA.list
+    permission-message: &4error: you do not have permission to use this command.
+
+  ea:
+    description: gives you a list of all the commands
+    usage: /<command>
+    permission: EA.list
+    permission-message: &4error: you do not have permission to use this command.
+
+  hi:
+    description: sends you a welcome message
+    usage: /<command>
+
+  hey:
+    description: sends you a welcome message
+    usage: /<command>
+
+  hello:
+    description: sends you a welcome message
+    usage: /<command>
+
+  kitadmin:
+    description: gives you the admin kit
+    usage: /<command>
+    permission: EA.kit
+    permission-message: &4error: you do not have permission to use this command.
+
+  noclip:
+    description: allows you to noclip
+    usage: /<command>
+    permission: EA.noclip
+    permission-message: &4error: you do not have permission to use this command.
+
+  unnoclip:
+    description: turns off noclip
+    usage: /<command>
+    permission: EA.noclip
+    permission-message: &4error: you do not have permission to use this command.
+  sit:
+    description: sits a player down
+    usage: /<command>
+    permission-message: &4error: you do not have permission to use this command.
+  stand:
+    description: stands a player up
+    usage: /<command>
+    permission-message: &4error: you do not have permission to use this command.
+
+permissions:
+  EA.*:
+    description: Gives access to all doorman commands
+    children:
+     EA.noclip: op
+     EA.fly: op
+     EA.kit: op
+     EA.health: op
+     EA.god: op
+     EA.help: op
